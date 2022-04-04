@@ -1,24 +1,30 @@
 import logo from './logo.svg';
 import './App.css';
+import Nav from './Componenets/Navbar';
+import Head from './Componenets/header';
+import Plate from './Componenets/Plate';
+import CompFour from './Componenets/CompFour';
+import CompFivee from './Componenets/CompFive';
+import CompSix from './Componenets/CompSix';
+import CompSev from './Componenets/Compsev';
+import Footer from './Componenets/footer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <>
+   <div className='bg-[#111827]' >
+<Nav/>
+<Head/>
+<Plate/>
+<CompFour/>
+<CompFivee/>
+<div className=' bg-[#0D121C] '>
+  <CompSix/>
+</div>
+<CompSev/>
+<Footer/>
+</div>
+   </>
   );
 }
 
